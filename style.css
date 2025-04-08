@@ -1,0 +1,234 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #f3e7ff 50%, #ffffff 50%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Shapes */
+.shape {
+    position: absolute;
+    background: #8a3ab9;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.shape1 {
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: -250px;
+}
+
+.shape2 {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    right: -200px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* Phone Mockup */
+.phone {
+    width: 300px;
+    height: 600px;
+    background: #f5f3f7;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: relative;
+}
+
+.phone-screen {
+    background: #ffffff;
+    border-radius: 20px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Header */
+.chat-header {
+    background: linear-gradient(to right, #8a3ab9, #bc2a8d);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+}
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.chat-name {
+    font-weight: bold;
+}
+
+.chat-status {
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Chat Body */
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.message.received {
+    background: #f5f3f7;
+    border-top-left-radius: 0;
+}
+
+.message.sent {
+    background: #e3d0ff;
+    margin-left: auto;
+    border-top-right-radius: 0;
+}
+
+/* Dog Images */
+.dog-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dog-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Pricing Options */
+.pricing-options {
+    margin-top: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #8a3ab9, #bc2a8d);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.option .price {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #f5f3f7;
+    outline: none;
+}
+
+.chat-input button {
+    background: #2c2c2c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Text Section */
+.text-section {
+    max-width: 400px;
+    color: #333;
+}
+
+.text-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.text-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phone {
+        width: 280px;
+        height: 560px;
+    }
+
+    .text-section {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
